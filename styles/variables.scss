@@ -3,3 +3,13 @@ $black: #282828;
 $gray: #4A4A4A;
 $medium-blue: #247382;
 $medium-red: #D34536;
+
+
+// Fonts
+
+ @font-face { font-family: Raleway-Bold; src: url('/build/fonts/Raleway-Bold.ttf'); }
+ @font-face { font-family: Raleway-Regular; src: url('/build/fonts/Raleway-Regular.ttf'); }
+
+ @font-face { font-family: Bitter-Bold; src: url('/build/fonts/Bitter-Bold.ttf'); }
+ @font-face { font-family: Bitter-Italic; src: url('/build/fonts/Bitter-Italic.ttf'); }
+ @font-face { font-family: Bitter-Regular; src: url('/build/fonts/Bitter-Regular.ttf'); }

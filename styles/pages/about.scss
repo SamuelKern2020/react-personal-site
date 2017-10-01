@@ -1,0 +1,61 @@
+@import 'variables';
+
+.page-about {
+
+    .jumbotron {
+        // background-color: $medium-red;
+        margin-bottom: 0px;
+        height: 100vh;
+        padding: 20% 60% 20% 10%;
+
+        // Background image & parallax scrolling
+        background-image: url("/build/images/headshot-background.png");
+        // opacity: 0.65;
+
+        // position: relative;
+
+        background-attachment: fixed;    // prevents image from scolling with the page
+        background-position: center;    //centers the image
+        background-repeat: no-repeat;
+        background-size: cover; // scales the image to fill the window
+
+        h1, h2 {
+            font-family: Bitter-Regular;
+        }
+
+        p {
+            margin-top: 8vh;
+            font-family: Raleway-Regular
+        }
+
+
+    }
+
+    .section-about {
+        background-color: $black;
+        height: 320px;
+        color: $medium-blue;
+        text-align: center;
+    }
+
+    .section-portfolio {
+        // background-color: $medium-blue;
+        height: 600px;
+
+        // Background image & parallax scrolling
+        background-image: url("/build/images/portfolio-background.jpg");
+        opacity: 0.65;
+
+        background-attachment: fixed;    // prevents image from scolling with the page
+        background-position: center;    //centers the image
+        background-repeat: no-repeat;
+        background-size: cover; // scales the image to fill the window
+
+    }
+
+    .section-resume {
+        background-color: $black;
+        height: 400px;
+    }
+
+}

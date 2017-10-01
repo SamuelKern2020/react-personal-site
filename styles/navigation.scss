@@ -8,6 +8,9 @@
             }
         }
     }
+    .navbar-brand {
+        color: $black;
+    }
 
 }
 
@@ -16,5 +19,15 @@
     border: none;
     border-radius: 0px;
     margin: 0px;
+    // TEXT
     text-transform: uppercase;
+    font-family: Raleway-Regular
+}
+
+// You can use something like this to trigger the hiding of the navbar
+.navbar-scroll-custom {
+	@media (max-width: 768px) {
+		transform: translateY(-52px);
+		transition-duration: 0.6s;
+	}
 }
