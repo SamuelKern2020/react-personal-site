@@ -1,5 +1,5 @@
 import React from 'react'
-import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
 
 const About = () => (
   <div className="page-about">
@@ -14,19 +14,35 @@ const About = () => (
            <Grid fluid={true}>
                <Row className="show-grid">
                     <Col>
-                        <h3>TITLE</h3>
-                        <p>blabla blabla blabla</p>
+                        <h2>About Me</h2>
+                        <p>I’m a student / entrepreneur with a passion for turning ideas into reality and a ceaseless energy for creation.</p>
+                        <p>Big picture: I love working with talented, diverse teams to build innovative technologies that solve real problems.</p>
                     </Col>
               </Row>
            </Grid>
        </div>
 
        <div className="section-portfolio">
-           PORTFOLIO
+           <Grid fluid={true}>
+               <Row className="show-grid">
+                    <Col>
+                        <h2>Work</h2>
+                    </Col>
+              </Row>
+           </Grid>
        </div>
 
        <div className="section-resume">
-           RESUME
+           <Grid fluid={true}>
+               <Row className="show-grid">
+                    <Col xsOffset={1}>
+                        <h2>Resume</h2>
+                        <p>If you're into that.</p>
+
+                        <Button bsStyle="primary" bsSize="large">Download CV</Button>
+                    </Col>
+              </Row>
+           </Grid>
        </div>
   </div>
 )

@@ -1,0 +1,32 @@
+@import 'variables';
+
+.section-1 {
+    background-color: $light-red;
+    height: 400px;
+    padding-left: 5vw;
+
+    h2 {
+        font-family: Raleway-Regular;
+        color: $gray;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: Bitter-Regular;
+        color: $gray;
+    }
+}
+
+.section-2 {
+    background-color: $mint;
+    height: 400px;
+    padding-left: 5vw;
+
+    h2 {
+        font-family: Raleway-Regular;
+        color: $gray;
+    }
+    p {
+        font-family: Bitter-Regular;
+        color: $gray;
+    }
+}

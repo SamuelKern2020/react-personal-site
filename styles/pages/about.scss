@@ -9,7 +9,9 @@
         padding: 20% 60% 20% 10%;
 
         // Background image & parallax scrolling
-        background-image: url("/build/images/headshot-background.png");
+        // background-image: url("/build/images/headshot-background.png");
+        background-image: url("/build/images/test.png");
+
         // opacity: 0.65;
 
         // position: relative;
@@ -33,9 +35,20 @@
 
     .section-about {
         background-color: $black;
-        height: 320px;
-        color: $medium-blue;
+        // height: 320px;
+        padding: 5vw 30vw 10vw 30vw;
+
         text-align: center;
+
+        h2 {
+            font-family: Raleway-Regular;
+            color: $medium-blue;
+            margin-bottom: 30px;
+        }
+        p {
+            font-family: Bitter-Regular;
+            color: $gray;
+        }
     }
 
     .section-portfolio {
@@ -51,11 +64,40 @@
         background-repeat: no-repeat;
         background-size: cover; // scales the image to fill the window
 
+
+        padding: 5vw 30vw 10vw 30vw;
+
+        text-align: center;
+
+        h2 {
+            font-family: Raleway-Regular;
+            color: $medium-blue;
+            margin-bottom: 30px;
+        }
+        p {
+            font-family: Bitter-Regular;
+            color: $gray;
+        }
     }
 
     .section-resume {
         background-color: $black;
         height: 400px;
+
+        padding: 5vw 0vw;
+
+        // text-align: center;
+
+        h2 {
+            font-family: Raleway-Regular;
+            color: $medium-blue;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: Bitter-Regular;
+            color: $gray;
+            margin-bottom: 70px;
+        }
     }
 
 }

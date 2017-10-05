@@ -1,0 +1,19 @@
+@import 'variables';
+
+.btn {
+    border-radius: 0px;
+    font-family: Raleway-Regular;
+
+}
+
+.btn-primary {
+    color: $medium-blue;
+    background-color: transparent;
+    border-color: $medium-blue;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: $medium-blue;;
+    border-color: $medium-blue;;
+}
