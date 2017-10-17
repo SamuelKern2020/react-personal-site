@@ -4,12 +4,20 @@
     background-color: $light-red;
     height: 400px;
     padding-left: 5vw;
+    padding-top: 5vw;
 
-    h2 {
+    h3 {
         font-family: Raleway-Regular;
         color: $gray;
         margin-bottom: 30px;
     }
+
+    h4 {
+        font-family: Bitter-Regular;
+        color: $gray;
+        margin-bottom: 5vw;
+    }
+
     p {
         font-family: Bitter-Regular;
         color: $gray;
@@ -20,12 +28,13 @@
     background-color: $mint;
     height: 400px;
     padding-left: 5vw;
+    padding-top: 5vw;
 
     h2 {
         font-family: Raleway-Regular;
         color: $gray;
     }
-    p {
+    h4 {
         font-family: Bitter-Regular;
         color: $gray;
     }

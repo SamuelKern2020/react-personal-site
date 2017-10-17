@@ -36,7 +36,7 @@
     .section-about {
         background-color: $black;
         // height: 320px;
-        padding: 5vw 30vw 10vw 30vw;
+        padding: 5vw 20vw 10vw 20vw;
 
         text-align: center;
 
@@ -47,7 +47,7 @@
         }
         p {
             font-family: Bitter-Regular;
-            color: $gray;
+            color: $white;
         }
     }
 
@@ -56,7 +56,7 @@
         height: 600px;
 
         // Background image & parallax scrolling
-        background-image: url("/build/images/portfolio-background.jpg");
+        // background-image: url("/build/images/portfolio-background.jpg");
         opacity: 0.65;
 
         background-attachment: fixed;    // prevents image from scolling with the page
@@ -65,7 +65,7 @@
         background-size: cover; // scales the image to fill the window
 
 
-        padding: 5vw 30vw 10vw 30vw;
+        padding: 5vw 10vw 10vw 10vw;
 
         text-align: center;
 

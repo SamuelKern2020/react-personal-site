@@ -1,5 +1,29 @@
 import React from 'react'
 import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
+import { PortfolioBlock } from '../PortfolioBlock.jsx'
+
+const data = [
+    {
+        key: 1,
+        header: "Test Header!!!",
+        subheader: "Test Subheader",
+        description: "Test description! Bla bla bla"
+    },
+    {
+        key: 2,
+        header: "Test Header 2",
+        subheader: "Test Subheader",
+        description: "Test description! Bla bla bla"
+    },
+    {
+        key: 3,
+        header: "Test Header 3",
+        subheader: "Test Subheader",
+        description: "Test description! Bla bla bla"
+    }
+]
+
+
 
 const About = () => (
   <div className="page-about">
@@ -27,7 +51,16 @@ const About = () => (
                <Row className="show-grid">
                     <Col>
                         <h2>Work</h2>
+
                     </Col>
+              </Row>
+              <Row>
+
+
+                      {data.map(function(result) {
+                          return <PortfolioBlock key={result.id} data={result}/>;
+                      })}
+
               </Row>
            </Grid>
        </div>
