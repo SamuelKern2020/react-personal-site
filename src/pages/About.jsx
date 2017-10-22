@@ -1,25 +1,29 @@
 import React from 'react'
 import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
 import { PortfolioBlock } from '../PortfolioBlock.jsx'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 const data = [
     {
         key: 1,
-        header: "Test Header!!!",
-        subheader: "Test Subheader",
-        description: "Test description! Bla bla bla"
+        header: "Sharelift",
+        subheader: "HYBRID MOBILE APP",
+        description: "A rideshare app for skiers and snowboarders.",
+        thumb: "/build/images/work-thumb-sharelift.png"
     },
     {
         key: 2,
-        header: "Test Header 2",
-        subheader: "Test Subheader",
-        description: "Test description! Bla bla bla"
+        header: "SAMSUNG USA",
+        subheader: "Websites",
+        description: "Several websites for Samsung while interning for R/GA in NYC ",
+        thumb: "build/images/work-thumb-samsung.png"
     },
     {
         key: 3,
-        header: "Test Header 3",
-        subheader: "Test Subheader",
-        description: "Test description! Bla bla bla"
+        header: "Boomer Bot",
+        subheader: "Chatbot",
+        description: "A prototype for a Facebook Messenger chatbot for ESPN. ",
+        thumb: "build/images/work-thumb-sharelift.png"
     }
 ]
 
@@ -34,6 +38,7 @@ const About = () => (
        </Jumbotron>
 
        <div className="section-about">
+           <a href='#section1'> Go to section 1 </a>
 
            <Grid fluid={true}>
                <Row className="show-grid">
@@ -54,29 +59,36 @@ const About = () => (
 
                     </Col>
               </Row>
-              <Row>
-
-
-                      {data.map(function(result) {
-                          return <PortfolioBlock key={result.id} data={result}/>;
-                      })}
-
-              </Row>
            </Grid>
+
+           <div className="portfolio-grid">
+                   {data.map(function(result) {
+                       return <PortfolioBlock key={result.id} data={result}/>;
+                   })}
+           </div>
+
        </div>
 
-       <div className="section-resume">
-           <Grid fluid={true}>
-               <Row className="show-grid">
-                    <Col xsOffset={1}>
-                        <h2>Resume</h2>
-                        <p>If you're into that.</p>
 
-                        <Button bsStyle="primary" bsSize="large">Download CV</Button>
-                    </Col>
-              </Row>
-           </Grid>
-       </div>
+
+
+       <ScrollableAnchor id={'anchor-resume'}>
+           <div className="section-resume">
+               <Grid fluid={true}>
+                   <Row className="show-grid">
+                        <Col xsOffset={1}>
+                            <h2>Resume</h2>
+                            <p>If you're into that.</p>
+
+                            <Button bsStyle="primary" bsSize="large">Download CV</Button>
+                        </Col>
+                  </Row>
+               </Grid>
+           </div>
+       </ScrollableAnchor>
+
+
+
   </div>
 )
 

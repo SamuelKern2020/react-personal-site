@@ -18,7 +18,7 @@ export class Navigation extends Component {
                 <Nav pullRight>
                   <NavItem><Link to='/'>About</Link></NavItem>
                   <NavItem><Link to='/work'>Work</Link></NavItem>
-                  <NavItem><Link to='/'>Resume</Link></NavItem>
+                  <NavItem><Link to='/#anchor-resume'>Resume</Link></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

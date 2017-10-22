@@ -11,6 +11,8 @@
         // Background image & parallax scrolling
         // background-image: url("/build/images/headshot-background.png");
         background-image: url("/build/images/test.png");
+        border-bottom: 2px solid $medium-blue;
+
 
         // opacity: 0.65;
 
@@ -53,11 +55,9 @@
 
     .section-portfolio {
         // background-color: $medium-blue;
-        height: 600px;
 
         // Background image & parallax scrolling
         // background-image: url("/build/images/portfolio-background.jpg");
-        opacity: 0.65;
 
         background-attachment: fixed;    // prevents image from scolling with the page
         background-position: center;    //centers the image
@@ -65,7 +65,7 @@
         background-size: cover; // scales the image to fill the window
 
 
-        padding: 5vw 10vw 10vw 10vw;
+        padding: 5vw 5vw 10vw 5vw;
 
         text-align: center;
 
@@ -77,6 +77,31 @@
         p {
             font-family: Bitter-Regular;
             color: $gray;
+        }
+
+
+        .portfolio-grid {
+          width: 90%;
+          max-width: 1240px;
+          margin: 0 auto;
+
+          display: grid;
+
+          grid-template-rows: auto;    //height will scale based on content
+          grid-gap: 3vw;    //column and row gutters
+
+          //For mobile
+          grid-template-columns: 1fr;    //takes up the whole width on mobile
+
+          // For tablet
+
+          @media only screen and (min-width: $screen-md) {
+            grid-template-columns: 1fr 1fr;
+          }
+          @media only screen and (min-width: $screen-lg) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+
         }
     }
 

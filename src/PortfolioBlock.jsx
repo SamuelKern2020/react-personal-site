@@ -24,14 +24,27 @@ export class PortfolioBlock extends Component {
 
     render() {
 
+        var thumbStyle = {
+            backgroundImage: 'url(' + this.props.data.thumb + ')'
+            // backgroundImage: 'url("/build/images/work-thumb-sharelift.png")'
+        }
+
+
+
 
 
         return(
-                <Col xs={12} sm={6} lg={4} className="card" onClick={this.handleClick}>
-                    <h5>{this.props.data.header}</h5>
+
+            <a className="card" onClick={this.handleClick}>
+                <div className="thumb" style={thumbStyle}></div>
+                <div className="text-area">
+                    <h4>{this.props.data.header}</h4>
                     <h6>{this.props.data.subheader}</h6>
                     <p>{this.props.data.description}</p>
-                </Col>
+                </div>
+
+            </a>
+
 
         )
     }

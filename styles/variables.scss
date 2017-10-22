@@ -16,3 +16,11 @@ $mint: #9CE2AC;
  @font-face { font-family: Bitter-Bold; src: url('/build/fonts/Bitter-Bold.ttf'); }
  @font-face { font-family: Bitter-Italic; src: url('/build/fonts/Bitter-Italic.ttf'); }
  @font-face { font-family: Bitter-Regular; src: url('/build/fonts/Bitter-Regular.ttf'); }
+
+
+// Breakpoints
+
+$screen-sm: 0;
+$screen-md: 769px;
+$screen-lg: 1280px;
+$screen-xlg: 1440px;

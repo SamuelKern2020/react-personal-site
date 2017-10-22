@@ -2,7 +2,63 @@
 
 .card {
     background-color: $white;
-    margin: 0vw 1vw;
-    border-bottom: $medium-blue;
-    border-width: 5px;
+    color: #444;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;    //because we're aligning the cards vertically
+    flex-direction: column;    //gives the vertical axis
+    // min-height: 100%;    //ensures the cards fill the height of their parent (.band)
+
+    // margin: 0vw 1vw;
+    // border-bottom: $medium-blue;
+    // border-width: 5px;
+
+    // For hover state:
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+
+    border-bottom: 2px solid $medium-blue;
+
+    .thumb {
+        padding-bottom: 60%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .text-area {
+        text-align: left;
+        padding: 20px;
+        h4 {
+            font-family: Raleway-Regular;
+            color: $medium-red;
+            text-transform: uppercase;
+        }
+
+        h6{
+            font-family: Raleway-Regular;
+            text-transform: uppercase;
+            color: $gray
+        }
+
+        p {
+            font-family: Bitter-Regular;
+            margin-top: 26px;
+            color: $gray
+        }
+
+        // &:after {
+        //     content: "test";
+        //     background-color: $medium-blue;
+        //     height: 10px;
+        // }
+    }
+
+
+}
+
+.card:hover {
+    top: -2px;    //move up 2px on hover
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2); //increase shadow
+    text-decoration: none;
 }
