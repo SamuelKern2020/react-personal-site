@@ -1,40 +1,18 @@
-React Boilerplate
-=====================
+A personal website for my portfolio, resume, a code playground, and eventually a blog. A work in progress...
 
-A minimal and light dev environment for ReactJS.
+### To run
 
-### Usage
-
-Clone the boilerplate and create your own git repo.
+Download the project and make sure you have yarn installed, then navigate to the root directory in the command line and run:
 
 ```
-git clone git@github.com:nolotz/react-simple-boilerplate.git
-```
-
-Install the dependencies and start the server.
-
-```
-npm/yarn install
-npm/yarn start
+yarn install
+yarn start
 open http://localhost:3000
 ```
 
-### Static Files
-
-You can store static files like images, fonts, etc in the `build` folder.
-
-For example, if you copy a file called my_image.png into the build folder you can access it using `http://localhost:3000/build/my_image.png`.
-
-### Linting
-
-This boilerplate project includes React ESLint configuration.
-
-```
-npm run lint
-```
+This site was built on top of the react-simple-boilerplate project (https://github.com/nolotz/react-simple-boilerplate)
 
 ### Dependencies
-
 * React
 * Webpack
 * [babel-loader](https://github.com/babel/babel-loader)
